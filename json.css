@@ -1,0 +1,48 @@
+html {
+    font-family: Ubuntu, Arial, sans-serif;
+}
+html,
+body {
+    margin: 0;
+    margin-left: 10px;
+}
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 20px
+}
+
+.property{
+  color: grey;
+  font-weight:bold;
+}
+
+.string{
+  color:blue;
+}
+
+.null{
+  color:red;
+}
+
+.array{
+  color:green;
+}
+
+.number{
+  color:orange;
+}
+
+.comment:before{
+  content:"// ";
+  color:red;
+  font-size:120%;
+  font-weight: bold;
+}
+
+.comment{
+  margin-left: 15px;
+  color: grey;
+  background:yellow;
+}

@@ -1,166 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Mago's Blog</title>
-	
+	<title>TelemetryEnvironment param from Crash Data</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="json.css" />
 	<script type="text/javascript">
-		function underConstruction(){
-			alert('Working hard for make the one');
-			return false;
+	window.onload=function(){
+		var coms = document.getElementsByClassName("comment");
+		for(i = 0; i < coms.length; i++){
+			coms[i].innerHTML = '['+(i+1)+'] ' + coms[i].innerHTML;
 		}
+	}
 	</script>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
-
 <body>
+<br/><h3>Data fields that Crash Reporter generated in "TelemetryEnvironment" param (took in Tor browser 52.1.2 that is built with Crash Reporter)</h3>
+<hr/>
+	<span class="object"><span class="toggle">{</span>
+<ul>
+<li><span class="property">"<span class="p collapsible">build</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">applicationId</span>"</span>:<span class="string">"{ee5630f7-d928-124b-9b0e-50f3f9c07474}"</span>, <span class="comment">Privacy-sensitive</span></li>
+			 <li><span class="property">"<span class="p">applicationName</span>"</span>:<span class="string">"Firefox"</span>, </li>
+			 <li><span class="property">"<span class="p">architecture</span>"</span>:<span class="string">"x86-64"</span>,</li>
+			 <li><span class="property">"<span class="p">buildId</span>"</span>:<span class="string">"20170608165100"</span>,</li>
+			 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+			 <li><span class="property">"<span class="p">vendor</span>"</span>:<span class="string">"Mozilla"</span>,</li>
+			 <li><span class="property">"<span class="p">platformVersion</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+			 <li><span class="property">"<span class="p">xpcomAbi</span>"</span>:<span class="string">"x86_64-gcc3"</span>,</li>
+			 <li><span class="property">"<span class="p">hotfixVersion</span>"</span>:<span class="null">null</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">partner</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">distributionId</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributionVersion</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">partnerId</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributor</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributorChannel</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">partnerNames</span>"</span>:<span class="array"><span class="toggle">[</span>
+					 <ol></ol><span class="toggle-end" card="0">]</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">system</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">memoryMB</span>"</span>:<span class="number">3806</span>,</li>
+			 <li><span class="property">"<span class="p">virtualMaxMB</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p collapsible">cpu</span>"</span>:<span class="object"><span class="toggle">{</span> <span class="comment">Not sure about fields below</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">count</span>"</span>:<span class="number">4</span>,</li>
+							 <li><span class="property">"<span class="p">cores</span>"</span>:<span class="number">2</span>,</li>
+							 <li><span class="property">"<span class="p">vendor</span>"</span>:<span class="string">"GenuineIntel"</span>,</li>
+							 <li><span class="property">"<span class="p">family</span>"</span>:<span class="number">6</span>,</li>
+							 <li><span class="property">"<span class="p">model</span>"</span>:<span class="number">37</span>,</li>
+							 <li><span class="property">"<span class="p">stepping</span>"</span>:<span class="number">5</span>,</li>
+							 <li><span class="property">"<span class="p">l2cacheKB</span>"</span>:<span class="number">256</span>,</li>
+							 <li><span class="property">"<span class="p">l3cacheKB</span>"</span>:<span class="number">3072</span>,</li>
+							 <li><span class="property">"<span class="p">speedMHz</span>"</span>:<span class="number">2533</span>,</li>
+							 <li><span class="property">"<span class="p collapsible">extensions</span>"</span>:<span class="array"><span class="toggle">[</span>
+									 <ol>
+											 <li><span class="string">"hasMMX"</span>,</li>
+											 <li><span class="string">"hasSSE"</span>,</li>
+											 <li><span class="string">"hasSSE2"</span>,</li>
+											 <li><span class="string">"hasSSE3"</span>,</li>
+											 <li><span class="string">"hasSSSE3"</span>,</li>
+											 <li><span class="string">"hasSSE4_1"</span>,</li>
+											 <li><span class="string">"hasSSE4_2"</span>
+											 </li>
+									 </ol><span class="toggle-end" card="7">]</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">os</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Linux"</span>,</li>
+							 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"4.4.0-79-generic"</span>,</li>
+							 <li><span class="property">"<span class="p">locale</span>"</span>:<span class="string">"en-US"</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">hdd</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p collapsible">profile</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">binary</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">system</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">gfx</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">D2DEnabled</span>"</span>:<span class="null">null</span>,</li>
+							 <li><span class="property">"<span class="p">DWriteEnabled</span>"</span>:<span class="null">null</span>,</li>
+							 <li><span class="property">"<span class="p">ContentBackend</span>"</span>:<span class="string">"Skia"</span>,</li>
+							 <li><span class="property">"<span class="p collapsible">adapters</span>"</span>:<span class="array"><span class="toggle">[</span><span class="comment">Some fields maybe privacy-sensitive</span>
+									 <ol>
+											 <li><span class="object"><span class="toggle">{</span>
+													 <ul>
+															 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"X.Org -- Gallium 0.4 on AMD CEDAR (DRM 2.43.0 / 4.4.0-79-generic, LLVM 3.8.0)"</span>,</li>
+															 <li><span class="property">"<span class="p">vendorID</span>"</span>:<span class="string">"X.Org"</span>,</li>
+															 <li><span class="property">"<span class="p">deviceID</span>"</span>:<span class="string">"Gallium 0.4 on AMD CEDAR (DRM 2.43.0 / 4.4.0-79-generic, LLVM 3.8.0)"</span>,</li>
+															 <li><span class="property">"<span class="p">subsysID</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">RAM</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">driver</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">driverVersion</span>"</span>:<span class="string">"3.0 Mesa 12.0.6"</span>,</li>
+															 <li><span class="property">"<span class="p">driverDate</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">GPUActive</span>"</span>:<span class="boolean">true</span>
+															 </li>
+													 </ul><span class="toggle-end">}</span></span>
+											 </li>
+									 </ol><span class="toggle-end" card="1">]</span></span>,</li>
+							 <li><span class="property">"<span class="p">monitors</span>"</span>:<span class="array"><span class="toggle">[</span>
+									 <ol></ol><span class="toggle-end" card="0">]</span></span>,</li>
+							 <li><span class="property">"<span class="p collapsible">features</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">compositor</span>"</span>:<span class="string">"basic"</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">settings</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">blocklistEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">e10sEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">e10sCohort</span>"</span>:<span class="string">"test"</span>,</li>
+			 <li><span class="property">"<span class="p">telemetryEnabled</span>"</span>:<span class="boolean">false</span>,</li>
+			 <li><span class="property">"<span class="p">locale</span>"</span>:<span class="string">"en-US"</span>,<span class="comment">Could be used to find out country which user lives in</span></li>
+			 <li><span class="property">"<span class="p collapsible">update</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">channel</span>"</span>:<span class="string">"default"</span>,</li>
+							 <li><span class="property">"<span class="p">enabled</span>"</span>:<span class="boolean">true</span>,</li>
+							 <li><span class="property">"<span class="p">autoDownload</span>"</span>:<span class="boolean">true</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">userPrefs</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">browser.cache.disk.capacity</span>"</span>:<span class="number">358400</span>,</li>
+							 <li><span class="property">"<span class="p">browser.newtabpage.enhanced</span>"</span>:<span class="boolean">false</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">addonCompatibilityCheckEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">isDefaultBrowser</span>"</span>:<span class="boolean">false</span>,</li>
+			 <li><span class="property">"<span class="p">defaultSearchEngine</span>"</span>:<span class="string">"ddg"</span>,</li>
+			 <li><span class="property">"<span class="p collapsible">defaultSearchEngineData</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"DuckDuckGo"</span>,</li>
+							 <li><span class="property">"<span class="p">loadPath</span>"</span>:<span class="string">"jar:[app]/omni.ja!browser/ddg.xml"</span>,</li>
+							 <li><span class="property">"<span class="p">origin</span>"</span>:<span class="string">"default"</span>,</li>
+							 <li><span class="property">"<span class="p">submissionURL</span>"</span>:<span class="string">"https://duckduckgo.com/"</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">profile</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">creationDate</span>"</span>:<span class="number">17325</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">addons</span>"</span>:<span class="object"><span class="toggle">{</span><span class="comment">if there are atypical addons, it could be private-sensitive</span>
+	 <ul>
+			 <li><span class="property">"<span class="p collapsible">activeAddons</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p collapsible">e10srollout@mozilla.org</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"Staged rollout of Firefox multi-process feature."</span>,</li>
+											 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Multi-process staged rollout"</span>,</li>
+											 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"1.9"</span>,</li>
+											 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">type</span>"</span>:<span class="string">"extension"</span>,</li>
+											 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17328</span>,</li>
+											 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17328</span>,</li>
+											 <li><span class="property">"<span class="p">isSystem</span>"</span>:<span class="boolean">true</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">crashme-simple@ted.mielczarek.org</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"Crash yourself with ease"</span>,</li>
+											 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Crash Me Now! (Simple)"</span>,</li>
+											 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"1.0"</span>,</li>
+											 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">type</span>"</span>:<span class="string">"extension"</span>,</li>
+											 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17330</span>,</li>
+											 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17330</span>,</li>
+											 <li><span class="property">"<span class="p">signedState</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">isSystem</span>"</span>:<span class="boolean">false</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">theme</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">id</span>"</span>:<span class="string">"{972ce4c6-7e08-4474-a285-3208198ce6fd}"</span>,</li>
+							 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"The default theme."</span>,</li>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Default"</span>,</li>
+							 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+							 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">4</span>,</li>
+							 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17325</span>,<span class="comment">is equal to a browser install day</span></li>
+							 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17325</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">activePlugins</span>"</span>:<span class="array"><span class="toggle">[</span>
+					 <ol></ol><span class="toggle-end" card="0">]</span></span>,</li>
+			 <li><span class="property">"<span class="p collapsible">activeGMPlugins</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li></li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">activeExperiment</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li></li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">persona</span>"</span>:<span class="null">null</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span></span>
+</li>
+</ul><span class="toggle-end">}</span></span>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">Link to index</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Mago's Blog</h1>
-                        <hr class="small">
-                        <span class="subheading">Yet another blog | Found error in text? Select it with mouse and press Ctrl+Enter</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            The first post
-                        </h2>
-                        <h3 class="post-subtitle">
-                            It's the first post in my blog, and I hope that's not the last
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#" onclick="underConstruction()">Mago</a> on January, 2017</p>
-                </div>
-                
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://vk.com/energy.save">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/efiver">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Mago's Blog 2016</p>
-					<script type="text/javascript" src="orphus/orphus.js"></script>
-<a href="//orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="orphus/orphus.gif" border="0" width="197" height="39" /></a>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
 
 </body>
-
 </html>
