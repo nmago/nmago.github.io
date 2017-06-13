@@ -1,0 +1,264 @@
+<html>
+<head>
+	<title>TelemetryEnvironment param from Crash Data</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="json.css" />
+	<script type="text/javascript">
+	window.onload=function(){
+		var coms = document.getElementsByClassName("comment");
+		for(i = 0; i < coms.length; i++){
+			coms[i].innerHTML = '['+(i+1)+'] ' + coms[i].innerHTML;
+		}
+	}
+	</script>
+</head>
+<body>
+<br/><h3>Data fields that Crash Reporter generated in "TelemetryEnvironment" param (took in Tor browser 52.1.2 that is built with Crash Reporter)</h3>
+<hr/>
+	<span class="object"><span class="toggle">{</span>
+<ul>
+<li><span class="property">"<span class="p collapsible">build</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">applicationId</span>"</span>:<span class="string">"{ee5630f7-d928-124b-9b0e-50f3f9c07474}"</span>, <span class="comment">Privacy-sensitive</span></li>
+			 <li><span class="property">"<span class="p">applicationName</span>"</span>:<span class="string">"Firefox"</span>, </li>
+			 <li><span class="property">"<span class="p">architecture</span>"</span>:<span class="string">"x86-64"</span>,</li>
+			 <li><span class="property">"<span class="p">buildId</span>"</span>:<span class="string">"20170608165100"</span>,</li>
+			 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+			 <li><span class="property">"<span class="p">vendor</span>"</span>:<span class="string">"Mozilla"</span>,</li>
+			 <li><span class="property">"<span class="p">platformVersion</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+			 <li><span class="property">"<span class="p">xpcomAbi</span>"</span>:<span class="string">"x86_64-gcc3"</span>,</li>
+			 <li><span class="property">"<span class="p">hotfixVersion</span>"</span>:<span class="null">null</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">partner</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">distributionId</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributionVersion</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">partnerId</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributor</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">distributorChannel</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p">partnerNames</span>"</span>:<span class="array"><span class="toggle">[</span>
+					 <ol></ol><span class="toggle-end" card="0">]</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">system</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">memoryMB</span>"</span>:<span class="number">3806</span>,</li>
+			 <li><span class="property">"<span class="p">virtualMaxMB</span>"</span>:<span class="null">null</span>,</li>
+			 <li><span class="property">"<span class="p collapsible">cpu</span>"</span>:<span class="object"><span class="toggle">{</span> <span class="comment">Not sure about fields below</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">count</span>"</span>:<span class="number">4</span>,</li>
+							 <li><span class="property">"<span class="p">cores</span>"</span>:<span class="number">2</span>,</li>
+							 <li><span class="property">"<span class="p">vendor</span>"</span>:<span class="string">"GenuineIntel"</span>,</li>
+							 <li><span class="property">"<span class="p">family</span>"</span>:<span class="number">6</span>,</li>
+							 <li><span class="property">"<span class="p">model</span>"</span>:<span class="number">37</span>,</li>
+							 <li><span class="property">"<span class="p">stepping</span>"</span>:<span class="number">5</span>,</li>
+							 <li><span class="property">"<span class="p">l2cacheKB</span>"</span>:<span class="number">256</span>,</li>
+							 <li><span class="property">"<span class="p">l3cacheKB</span>"</span>:<span class="number">3072</span>,</li>
+							 <li><span class="property">"<span class="p">speedMHz</span>"</span>:<span class="number">2533</span>,</li>
+							 <li><span class="property">"<span class="p collapsible">extensions</span>"</span>:<span class="array"><span class="toggle">[</span>
+									 <ol>
+											 <li><span class="string">"hasMMX"</span>,</li>
+											 <li><span class="string">"hasSSE"</span>,</li>
+											 <li><span class="string">"hasSSE2"</span>,</li>
+											 <li><span class="string">"hasSSE3"</span>,</li>
+											 <li><span class="string">"hasSSSE3"</span>,</li>
+											 <li><span class="string">"hasSSE4_1"</span>,</li>
+											 <li><span class="string">"hasSSE4_2"</span>
+											 </li>
+									 </ol><span class="toggle-end" card="7">]</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">os</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Linux"</span>,</li>
+							 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"4.4.0-79-generic"</span>,</li>
+							 <li><span class="property">"<span class="p">locale</span>"</span>:<span class="string">"en-US"</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">hdd</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p collapsible">profile</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">binary</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">system</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">model</span>"</span>:<span class="null">null</span>,</li>
+											 <li><span class="property">"<span class="p">revision</span>"</span>:<span class="null">null</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">gfx</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">D2DEnabled</span>"</span>:<span class="null">null</span>,</li>
+							 <li><span class="property">"<span class="p">DWriteEnabled</span>"</span>:<span class="null">null</span>,</li>
+							 <li><span class="property">"<span class="p">ContentBackend</span>"</span>:<span class="string">"Skia"</span>,</li>
+							 <li><span class="property">"<span class="p collapsible">adapters</span>"</span>:<span class="array"><span class="toggle">[</span><span class="comment">Some fields maybe privacy-sensitive</span>
+									 <ol>
+											 <li><span class="object"><span class="toggle">{</span>
+													 <ul>
+															 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"X.Org -- Gallium 0.4 on AMD CEDAR (DRM 2.43.0 / 4.4.0-79-generic, LLVM 3.8.0)"</span>,</li>
+															 <li><span class="property">"<span class="p">vendorID</span>"</span>:<span class="string">"X.Org"</span>,</li>
+															 <li><span class="property">"<span class="p">deviceID</span>"</span>:<span class="string">"Gallium 0.4 on AMD CEDAR (DRM 2.43.0 / 4.4.0-79-generic, LLVM 3.8.0)"</span>,</li>
+															 <li><span class="property">"<span class="p">subsysID</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">RAM</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">driver</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">driverVersion</span>"</span>:<span class="string">"3.0 Mesa 12.0.6"</span>,</li>
+															 <li><span class="property">"<span class="p">driverDate</span>"</span>:<span class="null">null</span>,</li>
+															 <li><span class="property">"<span class="p">GPUActive</span>"</span>:<span class="boolean">true</span>
+															 </li>
+													 </ul><span class="toggle-end">}</span></span>
+											 </li>
+									 </ol><span class="toggle-end" card="1">]</span></span>,</li>
+							 <li><span class="property">"<span class="p">monitors</span>"</span>:<span class="array"><span class="toggle">[</span>
+									 <ol></ol><span class="toggle-end" card="0">]</span></span>,</li>
+							 <li><span class="property">"<span class="p collapsible">features</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">compositor</span>"</span>:<span class="string">"basic"</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">settings</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">blocklistEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">e10sEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">e10sCohort</span>"</span>:<span class="string">"test"</span>,</li>
+			 <li><span class="property">"<span class="p">telemetryEnabled</span>"</span>:<span class="boolean">false</span>,</li>
+			 <li><span class="property">"<span class="p">locale</span>"</span>:<span class="string">"en-US"</span>,<span class="comment">Could be used to find out country which user lives in</span></li>
+			 <li><span class="property">"<span class="p collapsible">update</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">channel</span>"</span>:<span class="string">"default"</span>,</li>
+							 <li><span class="property">"<span class="p">enabled</span>"</span>:<span class="boolean">true</span>,</li>
+							 <li><span class="property">"<span class="p">autoDownload</span>"</span>:<span class="boolean">true</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">userPrefs</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">browser.cache.disk.capacity</span>"</span>:<span class="number">358400</span>,</li>
+							 <li><span class="property">"<span class="p">browser.newtabpage.enhanced</span>"</span>:<span class="boolean">false</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">addonCompatibilityCheckEnabled</span>"</span>:<span class="boolean">true</span>,</li>
+			 <li><span class="property">"<span class="p">isDefaultBrowser</span>"</span>:<span class="boolean">false</span>,</li>
+			 <li><span class="property">"<span class="p">defaultSearchEngine</span>"</span>:<span class="string">"ddg"</span>,</li>
+			 <li><span class="property">"<span class="p collapsible">defaultSearchEngineData</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"DuckDuckGo"</span>,</li>
+							 <li><span class="property">"<span class="p">loadPath</span>"</span>:<span class="string">"jar:[app]/omni.ja!browser/ddg.xml"</span>,</li>
+							 <li><span class="property">"<span class="p">origin</span>"</span>:<span class="string">"default"</span>,</li>
+							 <li><span class="property">"<span class="p">submissionURL</span>"</span>:<span class="string">"https://duckduckgo.com/"</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span></span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">profile</span>"</span>:<span class="object"><span class="toggle">{</span>
+	 <ul>
+			 <li><span class="property">"<span class="p">creationDate</span>"</span>:<span class="number">17325</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span>,</span>
+</li>
+<li><span class="property">"<span class="p collapsible">addons</span>"</span>:<span class="object"><span class="toggle">{</span><span class="comment">if there are atypical addons, it could be private-sensitive</span>
+	 <ul>
+			 <li><span class="property">"<span class="p collapsible">activeAddons</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p collapsible">e10srollout@mozilla.org</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"Staged rollout of Firefox multi-process feature."</span>,</li>
+											 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Multi-process staged rollout"</span>,</li>
+											 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"1.9"</span>,</li>
+											 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">type</span>"</span>:<span class="string">"extension"</span>,</li>
+											 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17328</span>,</li>
+											 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17328</span>,</li>
+											 <li><span class="property">"<span class="p">isSystem</span>"</span>:<span class="boolean">true</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span>,</span>
+							 </li>
+							 <li><span class="property">"<span class="p collapsible">crashme-simple@ted.mielczarek.org</span>"</span>:<span class="object"><span class="toggle">{</span>
+									 <ul>
+											 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"Crash yourself with ease"</span>,</li>
+											 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Crash Me Now! (Simple)"</span>,</li>
+											 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"1.0"</span>,</li>
+											 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">type</span>"</span>:<span class="string">"extension"</span>,</li>
+											 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+											 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17330</span>,</li>
+											 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17330</span>,</li>
+											 <li><span class="property">"<span class="p">signedState</span>"</span>:<span class="number">1</span>,</li>
+											 <li><span class="property">"<span class="p">isSystem</span>"</span>:<span class="boolean">false</span>
+											 </li>
+									 </ul><span class="toggle-end">}</span></span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">theme</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li><span class="property">"<span class="p">id</span>"</span>:<span class="string">"{972ce4c6-7e08-4474-a285-3208198ce6fd}"</span>,</li>
+							 <li><span class="property">"<span class="p">blocklisted</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">description</span>"</span>:<span class="string">"The default theme."</span>,</li>
+							 <li><span class="property">"<span class="p">name</span>"</span>:<span class="string">"Default"</span>,</li>
+							 <li><span class="property">"<span class="p">userDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">appDisabled</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">version</span>"</span>:<span class="string">"52.1.2"</span>,</li>
+							 <li><span class="property">"<span class="p">scope</span>"</span>:<span class="number">4</span>,</li>
+							 <li><span class="property">"<span class="p">foreignInstall</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">hasBinaryComponents</span>"</span>:<span class="boolean">false</span>,</li>
+							 <li><span class="property">"<span class="p">installDay</span>"</span>:<span class="number">17325</span>,<span class="comment">is equal to a browser install day</span></li>
+							 <li><span class="property">"<span class="p">updateDay</span>"</span>:<span class="number">17325</span>
+							 </li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">activePlugins</span>"</span>:<span class="array"><span class="toggle">[</span>
+					 <ol></ol><span class="toggle-end" card="0">]</span></span>,</li>
+			 <li><span class="property">"<span class="p collapsible">activeGMPlugins</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li></li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p collapsible">activeExperiment</span>"</span>:<span class="object"><span class="toggle">{</span>
+					 <ul>
+							 <li></li>
+					 </ul><span class="toggle-end">}</span>,</span>
+			 </li>
+			 <li><span class="property">"<span class="p">persona</span>"</span>:<span class="null">null</span>
+			 </li>
+	 </ul><span class="toggle-end">}</span></span>
+</li>
+</ul><span class="toggle-end">}</span></span>
+
+
+</body>
+</html>
